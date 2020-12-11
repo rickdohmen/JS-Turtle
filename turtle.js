@@ -4,7 +4,7 @@ Turtle= function(canvas){
     this.y= 0;
     this.angleInRadians= 0;
     this.penDown= false;
-    this.penColor= "#000000";
+    this.penColor= "red";
     this.lineWidth =  2;
     this.ct = canvas.getContext("2d");
     console.log(this.ct);
@@ -50,7 +50,7 @@ Turtle.prototype = {
     // console.log('left(' + angleInDegrees + ')');
     // A complete circle, 360º, is equivalent to 2π radians
     // angleInDegrees is an angle measure in degrees
-    this.angleInRadians += angleInDegrees * Math.PI / 180.0;
+    this.angleInRadians += angleInDegrees * Math.PI / 120.0;
     return this;
   },
   right: function (angleInDegrees) {
